@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="ads.js"></script>
+    
+    <style>
+      body{
+        height: 3000px;
+      }
+    </style>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit
-      molestias dolor architecto! Error dolorem, enim rerum nobis odio id
-      adipisci, iure obcaecati accusantium expedita voluptatem ipsam soluta cum
-      nemo.
-    </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit
-      molestias dolor architecto! Error dolorem, enim rerum nobis odio id
-      adipisci, iure obcaecati accusantium expedita voluptatem ipsam soluta cum
-      nemo.
-    </p>
     <div id="ad"></div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit
+      molestias dolor architecto! Error dolorem, enim rerum nobis odio id
+      adipisci, iure obcaecati accusantium expedita voluptatem ipsam soluta cum
+      nemo.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit
+      molestias dolor architecto! Error dolorem, enim rerum nobis odio id
+      adipisci, iure obcaecati accusantium expedita voluptatem ipsam soluta cum
+      nemo.
+    </p>
+    
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit
       molestias dolor architecto! Error dolorem, enim rerum nobis odio id
@@ -30,12 +37,14 @@
 
     <script>
       const ads = new Ads({
-        type:"image",
+        position: "top",
+        type:"sticky",
         Url:"https://google.com",
         width: 300,
-        height: 500,
+        height: 400,
         element: "#ad",
-        image:"https://freespirits.gr/images/SERVISES/bestprice_connect.jpg"
+        image:"https://freespirits.gr/images/SERVISES/bestprice_connect.jpg",
+        imageHeight:300
            });
     </script>
   </body>

@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
     "start": "webpack",
     "webpack-dev-server":"webpack-dev-server",
-    "dev": "npm run webpack-dev-server -- --env.mode developement --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run webpack-dev-server -- --env.mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "production": "npm start -- --env.mode production"
   },
   "keywords": [],
   "author": "",

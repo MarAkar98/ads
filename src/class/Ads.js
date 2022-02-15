@@ -1,26 +1,23 @@
+
+import createImage from "../functions/createImage"
+import createSticky from "../functions/createSticky"
+import render from "../functions/render"
+import "../style/image.css"
 export default class Ads {
   constructor (options){
       this.options = options
+     this.container = document.querySelector("#ad") 
+
       this.element = document.querySelector(this.options.element)
       console.log(this.element)
       this.render()
 
   }
 
- render(){
-    const container = document.createElement("div")
-    container.style.width = this.options.width + "px"
-    container.style.height = this.options.height + "px"
-    container.append(this.createImage())
-    this.element.append(container)
-    
- }
 
- createImage(){
-     const image = document.createElement("img")
-     image.src = this.options.image
-     return image
- }
+ 
 
-
+  render = render
+  createImage = createImage
+  createSticky = createSticky
 }
